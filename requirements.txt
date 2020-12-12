@@ -93,7 +93,6 @@ systemd-python==234
 threadpoolctl==2.1.0
 ujson==4.0.1
 urllib3==1.22
-usb-creator==0.3.3
 vatnumber==1.2
 virtualenv==15.1.0
 vobject==0.9.3
