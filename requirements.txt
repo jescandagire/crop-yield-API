@@ -2,7 +2,6 @@ asn1crypto==0.24.0
 Babel==2.3.4
 backcall==0.2.0
 beautifulsoup4==4.9.3
-Brlapi==0.6.6
 certifi==2018.1.18
 chardet==3.0.4
 click==7.1.2
