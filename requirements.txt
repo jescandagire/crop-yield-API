@@ -91,7 +91,6 @@ suds-jurko==0.6
 suds-py3==1.4.1.0
 systemd-python==234
 threadpoolctl==2.1.0
-ufw==0.36
 ujson==4.0.1
 unattended-upgrades==0.1
 urllib3==1.22
