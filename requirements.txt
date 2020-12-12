@@ -87,6 +87,7 @@ simplejson==3.13.2
 six==1.11.0
 sklearn==0.0
 soupsieve==2.0.1
+statsmodels==0.5.0
 suds-jurko==0.6
 suds-py3==1.4.1.0
 systemd-python==234
