@@ -89,7 +89,6 @@ sklearn==0.0
 soupsieve==2.0.1
 suds-jurko==0.6
 suds-py3==1.4.1.0
-system-service==0.3
 systemd-python==234
 threadpoolctl==2.1.0
 traitlets==5.0.5
