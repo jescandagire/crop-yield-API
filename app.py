@@ -93,10 +93,10 @@ def predict():
 #with the web app
 
     # for rendering the results from html
-    # float_features = [float(x) for x in request.form.values()]
-    # # load model
-    # model = load_models()
-    # prediction = model.predict(np.array(float_features))[0]
+    float_features = [float(x) for x in request.form.values()]
+    # load model
+    model = load_models()
+    prediction = model.predict(np.array(float_features))[0]
 
 ###############################################
 
@@ -123,8 +123,8 @@ def predict():
 ########################################################
 
     # load model and predict
-    model = load_models()
-    prediction = model.predict(np.array(x))[0]
+    # model = load_models()
+    # prediction = model.predict(np.array(x))[0]
     response = json.dumps({'response': prediction})
 
     return response, 200
