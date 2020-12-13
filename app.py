@@ -126,8 +126,8 @@ def predict():
     # load model and predict
     # model = load_models()
     # prediction = model.predict(np.array(x))[0]
-    response = json.dumps({'response': data_list})
-    # response = json.dumps({'response': prediction})
+    prediction = 19.098765
+    response = json.dumps({'response': prediction})
 
     return response, 200
 
