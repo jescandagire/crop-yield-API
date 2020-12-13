@@ -17,9 +17,9 @@ def load_models():
     model = sm.load(file_name)
     return model
 
-@app.route('/')
-def home():
-	return render_template('index.html')
+# @app.route('/')
+# def home():
+# 	return render_template('index.html')
 
 
 @app.route('/predict', methods=['GET', 'POST'])
@@ -69,34 +69,34 @@ def predict():
     ##################################################################################
 
 
-#     marital_status = request_json['marital_status']
-#     data_list.append(marital_status)
+    marital_status = request_json['marital_status']
+    data_list.append(marital_status)
 
-#     education = request_json['education']
-#     data_list.append(education)
+    education = request_json['education']
+    data_list.append(education)
 
-#     land_ownership = request_json['land_ownership']
-#     data_list.append(land_ownership)
+    land_ownership = request_json['land_ownership']
+    data_list.append(land_ownership)
 
-#     farm_size = request_json['farm_size']
-#     data_list.append(farm_size)
+    farm_size = request_json['farm_size']
+    data_list.append(farm_size)
 
-#     age_group = request_json['age_group']
-#     data_list.append(age_group)
+    age_group = request_json['age_group']
+    data_list.append(age_group)
     
 
-#     print(data_list)
-#     #changing the string values in the list to float values
-#     x = [float(v) for v in data_list]
+    print(data_list)
+    #changing the string values in the list to float values
+    x = [float(v) for v in data_list]
 
 
 #with the web app
 
     # for rendering the results from html
-    float_features = [float(x) for x in request.form.values()]
-    # load model
-    model = load_models()
-    prediction = model.predict(np.array(float_features))[0]
+    # float_features = [float(x) for x in request.form.values()]
+    # # load model
+    # model = load_models()
+    # prediction = model.predict(np.array(float_features))[0]
 
 ###############################################
 
@@ -123,8 +123,8 @@ def predict():
 ########################################################
 
     # load model and predict
-    # model = load_models()
-    # prediction = model.predict(np.array(x))[0]
+    model = load_models()
+    prediction = model.predict(np.array(x))[0]
     response = json.dumps({'response': prediction})
 
     return response, 200
