@@ -7,19 +7,11 @@
 		<div>
 			<h3>predict yield</h3>
 			<form action="{{ url_for('predict')}}" method="POST">
-				<input type="text" name="constant_value" placeholder="constant value" required="required"/>
+				<input type="text" name="marital_status" placeholder="marital status" required="required"/>
+				<input type="text" name="education" placeholder="education" required="required"/>
+				<input type="text" name="land_ownership" placeholder="land_ownership" required="required"/>
 				<input type="text" name="farm_size " placeholder="farm size " required="required"/>
-				<input type="text" name="marital_status_married" placeholder="marital status married" required="required"/>
-				<input type="text" name="marital_status_single" placeholder="marital status single" required="required"/>
-				<input type="text" name="education_primary" placeholder="education_primary" required="required"/>
-				<input type="text" name="education_secondary" placeholder="education_secondary" required="required"/>
-				<input type="text" name="education_tertiary" placeholder="education_tertiary" required="required"/>
-				<input type="text" name="land_ownership_no" placeholder="land_ownership_no" required="required"/>
-				<input type="text" name="land_ownership_yes" placeholder="land_ownership_yes" required="required"/>
-				<input type="text" name="age_group_adult" placeholder="age_group_adult" required="required"/>
-				<input type="text" name="age_group_eldery" placeholder="age_group_eldery" required="required"/>
-				<input type="text" name="age_group_young_adult" placeholder="age_group_young_adult" required="required"/>
-				<input type="text" name="age_group_youth" placeholder="age_group_youth" required="required"/>
+				<input type="text" name="age_group" placeholder="age_group" required="required"/>
 				<button type="submit">Predict</button>
 			</form>
 
