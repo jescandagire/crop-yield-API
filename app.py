@@ -69,25 +69,25 @@ def predict():
     ##################################################################################
 
 
-    marital_status = request_json['marital_status']
-    data_list.append(marital_status)
+#     marital_status = request_json['marital_status']
+#     data_list.append(marital_status)
 
-    education = request_json['education']
-    data_list.append(education)
+#     education = request_json['education']
+#     data_list.append(education)
 
-    land_ownership = request_json['land_ownership']
-    data_list.append(land_ownership)
+#     land_ownership = request_json['land_ownership']
+#     data_list.append(land_ownership)
 
-    farm_size = request_json['farm_size']
-    data_list.append(farm_size)
+#     farm_size = request_json['farm_size']
+#     data_list.append(farm_size)
 
-    age_group = request_json['age_group']
-    data_list.append(age_group)
+#     age_group = request_json['age_group']
+#     data_list.append(age_group)
     
 
-    print(data_list)
-    #changing the string values in the list to float values
-    x = [float(v) for v in data_list]
+#     print(data_list)
+#     #changing the string values in the list to float values
+#     x = [float(v) for v in data_list]
 
 
 #with the web app
