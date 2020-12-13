@@ -26,6 +26,7 @@ def load_models():
 def predict():
     # parse input features from request
     request_json = request.get_json()
+    print(request_json)
     data_list = []
 
     # constant_value = request_json['constant']
@@ -87,7 +88,7 @@ def predict():
 
     print(data_list)
     #changing the string values in the list to float values
-    x = [float(v) for v in data_list]
+    # x = [float(v) for v in data_list]
 
 
 #with the web app
@@ -123,9 +124,10 @@ def predict():
 ########################################################
 
     # load model and predict
-    model = load_models()
-    prediction = model.predict(np.array(x))[0]
-    response = json.dumps({'response': prediction})
+    # model = load_models()
+    # prediction = model.predict(np.array(x))[0]
+    response = json.dumps({'response': data_list})
+    # response = json.dumps({'response': prediction})
 
     return response, 200
 
