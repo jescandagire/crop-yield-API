@@ -106,6 +106,7 @@ def predict():
     prediction = model.predict(np.array(x))[0]
     # prediction = 19.098765
     prediction = 10**prediction
+    prediction = round(prediction, 4)
     response = json.dumps({'response': prediction})
 
     return response, 200
